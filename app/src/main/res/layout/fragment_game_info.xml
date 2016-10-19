@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_background_parent"
+    android:layout_margin="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvGameInfo"
+        android:padding="20dp"
+        android:textSize="15dp"
+        android:background="@drawable/login_background_body"
+        android:gravity="center|fill_horizontal"
+        android:layout_centerInParent="true"
+        android:text="@string/about_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

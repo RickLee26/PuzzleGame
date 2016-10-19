@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PuzzleGame</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_username">账号</string>
+    <string name="login_password">密码</string>
+    <string name="login_btn_text">登陆</string>
+    <string name="login_id_quote">没有账号？</string>
+    <string name="login_register_link">注册</string>
+
+    <string name="select_image">选择图片</string>
+    <string name="start_game">开始游戏</string>
+
+    <string name="user_info_name">账号：%1$s</string>
+    <string name="user_info_nickname">昵称：%1$s</string>
+    <string name="user_info_scores">得分：%1$d</string>
+
+    <string name="select_image_from_server">服务器</string>
+    <string name="select_image_from_camera">相机</string>
+    <string name="select_image_from_album">相册</string>
+
+    <string name="rand_title">英雄榜</string>
+
+    <string name="about_game">这是一款简单有趣的拼图游戏！\n玩家可选择app内置图片或手机相册图片进行拼图，也可以现行拍一张照片用以游戏。\n这款拼图游戏有三个等级：初级，中级，高级，玩家可自行选择。\n如果玩家有注册的账号，还可登录查看游戏排行榜，寻找自己的成绩。\n现在就开始游戏吧！（点击文字返回）</string>
+
+</resources>

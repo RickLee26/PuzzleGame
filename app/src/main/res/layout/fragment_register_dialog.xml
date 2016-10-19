@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_background_parent">
+    <!-- padding 内边距   layout_margin 外边距
+            android:layout_alignParentTop 布局的位置是否处于顶部 -->
+    <RelativeLayout
+        android:id="@+id/sign_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/login_background_body" >
+        <!-- 账号 -->
+        <TextView
+            style="@style/Login_Signin_TextView"
+            android:id="@+id/signin_user_input"
+            android:layout_alignParentTop="true"
+            android:text="@string/login_username" />
+        <EditText
+            style="@style/Login_Signin_EditText"
+            android:id="@+id/et_username_signin"
+            android:hint="请输入您的账号"
+            android:layout_below="@id/signin_user_input"
+            android:inputType="text"/>
+
+        <!-- nickname -->
+        <TextView
+            style="@style/Login_Signin_TextView"
+            android:id="@+id/signin_user_input_nickname"
+            android:layout_below="@id/et_username_signin"
+            android:text="昵称" />
+        <EditText
+            style="@style/Login_Signin_EditText"
+            android:id="@+id/et_nickname"
+            android:hint="请输入您的昵称"
+            android:layout_below="@id/signin_user_input_nickname"
+            android:inputType="text"/>
+
+
+        <!-- 密码 text -->
+        <TextView
+            style="@style/Login_Signin_TextView"
+            android:id="@+id/signin_password_input"
+            android:layout_below="@id/et_nickname"
+            android:text="@string/login_password" />
+        <EditText
+            style="@style/Login_Signin_EditText"
+            android:hint="请输入您的密码"
+            android:id="@+id/et_userpassword_signin"
+            android:layout_below="@id/signin_password_input"
+            android:password="true"
+            android:inputType="textPassword" />
+
+        <!-- 确认密码 text -->
+        <TextView
+            style="@style/Login_Signin_TextView"
+            android:id="@+id/signin_password_input_confirm"
+            android:layout_below="@id/et_userpassword_signin"
+            android:text="重复密码" />
+        <EditText
+            style="@style/Login_Signin_EditText"
+            android:hint="请确认您的密码"
+            android:id="@+id/et_userpassword_confirm"
+            android:layout_below="@id/signin_password_input_confirm"
+            android:password="true"
+            android:inputType="textPassword" />
+        <CheckBox
+            android:id="@+id/cb_show_userpassword_signin"
+            android:layout_alignLeft="@id/et_userpassword_signin"
+            android:layout_below="@id/et_userpassword_confirm"
+            android:text="显示密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!-- 登录button -->
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_userpassword_confirm"
+            android:layout_alignRight="@id/et_userpassword_confirm"
+            android:text="@string/login_register_link"
+            android:background="@drawable/blue_button" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView  android:id="@+id/tv_back_to_login"
+            style="@style/Login_Signin_TextView"
+            android:textColor="#1874CD"
+            android:text="@string/login_btn_text"
+            android:layout_marginLeft="20dp" />
+        <ImageView android:id="@+id/miniTwitter_logo"
+            android:src="@drawable/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp" />
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/miniTwitter_logo"
+            android:layout_alignBottom="@id/miniTwitter_logo"
+            android:paddingBottom="8dp"  />
+    </RelativeLayout>
+
+</LinearLayout>

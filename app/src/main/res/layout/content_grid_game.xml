@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_background_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/ll_game_state_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/free_game_text_style"
+            android:id="@+id/tv_game_state_steps"
+            android:paddingRight="50dip"
+            android:text="步数： 0"/>
+
+        <Chronometer
+            style="@style/free_game_text_style"
+            android:id="@+id/ch_game_state_time_grid" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:id="@+id/ll_game_options_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/free_game_button"
+            android:id="@+id/btnOriginalBitmapGrid"
+            android:background="@drawable/button3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="原图"  />
+
+        <Button
+            style="@style/free_game_button"
+            android:id="@+id/btnResetGameGrid"
+            android:background="@drawable/button2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="重置"  />
+
+        <Button
+            style="@style/free_game_button"
+            android:id="@+id/btnGamePauseGrid"
+            android:background="@drawable/button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂停"  />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_gamimg"
+        android:layout_below="@id/ll_game_state_grid"
+        android:layout_above="@id/ll_game_options_grid"
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivOriginalAndPauseGrid"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+
+</RelativeLayout>

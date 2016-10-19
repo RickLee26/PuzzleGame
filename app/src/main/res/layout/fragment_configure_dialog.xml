@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_background_parent"
+    android:gravity="center"
+    android:padding="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="游戏难度"
+        android:id="@+id/tvGameLevel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        style="@style/configure_textview"/>
+
+    <RadioGroup
+        android:orientation="vertical"
+        android:id="@+id/rgGameLevel"
+        android:layout_toRightOf="@id/tvGameLevel"
+        android:layout_alignTop="@id/tvGameLevel"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:text="小牛试刀(x2)"
+            android:id="@+id/pieceNum2"
+            style="@style/configure_radio_button"/>
+        <RadioButton
+            android:text="狮子搏兔(x3)"
+            android:id="@+id/pieceNum3"
+            style="@style/configure_radio_button"/>
+        <RadioButton
+            android:text="大鹏展翅(x4)"
+            android:id="@+id/pieceNum4"
+            style="@style/configure_radio_button"/>
+        <RadioButton
+            android:text="神龙摆尾(x5)"
+            android:id="@+id/pieceNum5"
+            style="@style/configure_radio_button"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvGameType"
+        android:text="游戏模式"
+        android:layout_below="@id/rgGameLevel"
+        android:layout_marginTop="20dp"
+        style="@style/configure_textview"/>
+
+    <RadioGroup
+        android:id="@+id/rgGameType"
+        android:layout_toRightOf="@id/tvGameType"
+        android:layout_alignTop="@id/tvGameType"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="九宫格"
+            android:id="@+id/modeSudoku"
+            style="@style/configure_radio_button"/>
+        <RadioButton
+            android:id="@+id/modeJigSaw"
+            android:text="月芽片"
+            style="@style/configure_radio_button"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbBackgroundMusic"
+        android:text="背景音乐"
+        android:checked="true"
+        android:layout_below="@id/rgGameType"
+        android:layout_marginTop="20dp"
+        style="@style/configure_textview"/>
+
+    <Button
+        android:text="OK"
+        android:textSize="10dp"
+        android:background="@drawable/blue_button"
+        android:layout_alignRight="@id/rgGameType"
+        android:layout_alignTop="@id/cbBackgroundMusic"
+        android:id="@+id/btnConfigureOK"
+        android:layout_width="60dp"
+        android:layout_height="35dp"/>
+
+</RelativeLayout>

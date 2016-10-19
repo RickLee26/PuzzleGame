@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_background_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/ivUserImage"
+        android:src="@drawable/default_pic"
+        android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/user_info_text"
+            android:id="@+id/tvUserInfoName"
+            android:text="@string/user_info_name"  />
+        <TextView
+            style="@style/user_info_text"
+            android:id="@+id/tvUserInfoNickName"
+            android:text="@string/user_info_nickname" />
+        <TextView
+            style="@style/user_info_text"
+            android:id="@+id/tvUserInfoMark"
+            android:text="@string/user_info_scores"   />
+
+        <Button
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/blue_button"
+            style="@style/user_info_text"
+            android:layout_width="wrap_content"
+            android:id="@+id/btnCheckRank"
+            android:text="排行榜"  />
+    </LinearLayout>
+
+</LinearLayout>

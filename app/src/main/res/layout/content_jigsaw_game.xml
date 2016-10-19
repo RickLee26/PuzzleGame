@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlFreeGameContainer"
+    android:background="@drawable/login_background_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_game_state"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Chronometer
+            style="@style/free_game_text_style"
+            android:id="@+id/ch_game_state_time" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivOriginalAndPause"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnOriginalBitmap"
+            android:background="@drawable/button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="原图"  />
+
+        <TextView
+            android:layout_width="10sp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnResetGame"
+            android:background="@drawable/button2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="重置"  />
+
+        <TextView
+            android:layout_width="10sp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnGamePause"
+            android:background="@drawable/button3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂停"  />
+    </LinearLayout>
+
+
+</RelativeLayout>

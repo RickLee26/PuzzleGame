@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_background_parent">
+    <!-- padding 内边距   layout_margin 外边距
+            android:layout_alignParentTop 布局的位置是否处于顶部 -->
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:background="@drawable/login_background_body"
+        >
+        <!-- 账号 -->
+        <TextView
+            android:id="@+id/login_user_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_username" />
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入您的账号"
+            android:layout_below="@id/login_user_input"
+            android:singleLine="true"
+            android:inputType="text"/>
+        <!-- 密码 text -->
+        <TextView
+            android:id="@+id/login_password_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_username"
+            android:layout_marginTop="3dp"
+            android:text="@string/login_password" />
+        <EditText
+            android:hint="请输入您的密码"
+            android:id="@+id/et_userpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_password_input"
+            android:password="true"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            />
+        <CheckBox
+            android:id="@+id/cb_show_userpassword"
+            android:layout_alignLeft="@id/et_userpassword"
+            android:layout_below="@id/et_userpassword"
+            android:text="显示密码"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <!-- 登录button -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_userpassword"
+            android:layout_alignRight="@id/et_userpassword"
+            android:text="@string/login_btn_text"
+            android:background="@drawable/blue_button"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView  android:id="@+id/register_link"
+            android:text="@string/login_id_quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_toRightOf="@id/register_link"
+            android:id="@+id/tv_jmpto_signin"
+            android:text="@string/login_register_link"
+            android:textColor="#1874CD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/miniTwitter_logo"
+            android:src="@drawable/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="25dp"
+            />
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/miniTwitter_logo"
+            android:layout_alignBottom="@id/miniTwitter_logo"
+            android:paddingBottom="8dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
